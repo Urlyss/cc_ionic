@@ -1,0 +1,45 @@
+<!--
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 2
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 2</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <app-explore-container name="Tab 2 page"></app-explore-container>
+</ion-content>
+-->
+
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">
+      Caméra KAMTO
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content style="margin-bottom: 10%;">
+  
+ <img src="{{imgURL}}">
+  <ion-fab vertical="bottom" horizontal="start">
+        <ion-fab-button (click)="getGallery()" color="primary">
+          <ion-icon name="image-outline"></ion-icon>
+        </ion-fab-button>
+
+  </ion-fab>
+
+  <ion-fab vertical="bottom" title="get camera" horizontal="end">
+    <ion-fab-button (click)="getCamera()" color="primary">
+      <ion-icon name="camera"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
+
